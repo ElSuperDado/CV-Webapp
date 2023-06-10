@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta name="author" content="Damian Boquete Costa" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" >
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton" >
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yellowtail&display=swap" >  
+
+        <title>Damian Boquete</title>
+    </head>
+
+
+
+    <body>
+        <header>
+            <div id="header-content">
+                <img id="img-profile" src="./imgs/misc/me.jpg" alt="Moi !" width="250" height="250">
+                <div  id="header-text">
+                    <h1>Damian Boquete</h1>
+                    <p>Étudiant HEPIA <br/>Online CV</p>
+                </div>
+            </div>   
+        </header>
+
+
+
+        <main>
+            <section id="div-introduction" class="main-sections">
+                <h1>Introduction</h1>
+            </section>
+
+            <section id="div-formations" class="main-sections">
+                <h1>Formations</h1>
+            </section>
+
+            <section id="div-experiences" class="main-sections">
+                <h1>Experiences professionelles</h1>
+            </section>
+
+            <section id="div-competences" class="main-sections">
+                <h1>Compétences</h1>
+                <div id="competences-content">
+                    <div id="competence-1" class="competences">
+                        <h2>Langues</h2>
+                        <div id="langage-content">
+                            <div id="langage-french">
+                                <img src="imgs/flags/france-128.png" alt="french flag">
+                                <p>Langue maternelle</p>
+                            </div>
+                            <div id="langage-english">
+                                <img src="imgs/flags/uk-128.png" alt="UK flag">
+                                <p>Niveau B2</p>
+                            </div>
+                            <div id="langage-spanish">
+                                <img src="imgs/flags/spain-128.png" alt="spanish flag">
+                                <p>Niveau C1</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="competence-2" class="competences">
+                        <h2>Programmation</h2>
+                        <div id="prog-content">
+                            <div id="langage-c">
+                                <img src="imgs/prog/c.png" alt="C icon">
+                                <p>C</p>
+                            </div>
+                            <div id="langage-java">
+                                <img src="imgs/prog/java.png" alt="Java icon">
+                                <p>Java</p>
+                            </div>
+                            <div id="langage-python">
+                                <img src="imgs/prog/python.png" alt="Python icon">
+                                <p>Python</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="competence-3" class="competences">
+                        <h2>Social</h2>
+                        <div id="social-content">
+                            <div id="skill-teamwork">
+                                <img src="imgs/misc/teamwork.png" alt="teamwork">
+                                <p>travail d'équipe</p>
+                            </div>
+                            <div id="skill-perseverence">
+                                <img src="imgs/misc/perseverence.png" alt="perseverence">
+                                <p>persévérant</p>
+                            </div>
+                            <div id="skill-sociable">
+                                <img src="imgs/misc/chat.png" alt="sociable">
+                                <p>aisance sociale</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="div-portfolio" class="main-sections">
+                <h1>Portfolio</h1>
+                <div id="portfolio-content">
+                </div>
+            </section>
+
+            <section id="section-contact" class="main-sections">
+                <h1>Contact</h1>
+                <div id="div-contact">
+                    <form action="" method="post">
+                        <div class="contact-input-div">
+                            <input type="text" name="name" placeholder="Prénom" required>
+                        </div>getintroduction/
+
+                        <div class="contact-input-div">
+                            <input type="text" name="contact-form-div-surname" placeholder="Nom" required>
+                        </div>
+
+                        <div class="contact-input-div">
+                            <input type="text" name="mail" placeholder="adresse@mail.ch" required>
+                        </div>
+
+                        <div class="contact-input-div">
+                            <textarea name="message" placeholder="Votre message" rows="6" cols="20" required></textarea>
+                        </div>
+
+                        <div class="contact-input-div">
+                            <input type="submit" value="Envoyer">
+                        </div>
+                    </form>
+                    <div id="btns-social-media">
+                        <img src="imgs/misc/github.png" alt="">
+                        <img src="imgs/misc/linkedin.png" alt="">
+                    </div>
+                </div>
+
+                
+            </section>
+        </main>
+
+        <button id="btn-night-day-mode" onclick="swapMode()">
+            <img id="img-night-day-mode" src="imgs/misc/moon.png" alt="">
+        </button>
+
+        <footer>
+            <canvas id="rotating-cube"></canvas>
+            <p>&copy; <span id="current-year"></span> Damian Boquete</p>
+        </footer>
+    </body>
+
+    <!-- theses scripts are called here to avoid DOM not being ready -->
+    <script src="scripts/cube.js"></script>
+    <script src="scripts/scripts.js"></script>
+
+</html>
